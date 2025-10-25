@@ -4,8 +4,13 @@
 **Reviewed by:** [Instructor or CFO Name]  
 **Date Created:** [MM/DD/YYYY]  
 **Last Updated:** [MM/DD/YYYY]  
-**Version:** [1.0]  
-**LLM Support (if used):** [e.g., GPT-5 or Codex]
+**Version:** 1.0  
+**LLM Support (if used):** GPT-5 Codex  
+**Exposure:** €11,494,253 (≈$12,500,000 at EUR/USD 1.0875) receivable in 1 year  
+**Valuation Date:** 25 October 2025  
+**Settlement Date:** 25 October 2026  
+**Market Data:** Spot 1.0875 | 1-year forward 1.0910 | USD 12M OIS 4.85% | EUR 12M EURIBOR 3.15%  
+**Option Quotes:** EUR put @1.0900 premium $0.017 | EUR call @1.1300 premium $0.022
 
 ---
 
