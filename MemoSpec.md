@@ -1,17 +1,15 @@
-# 🧩 fin321-fx-memo-spec.md
+FX Exposure Executive Memo – Spec-Driven Template
+Version 2.0 (Codex/LLM Ready)
+Author: [Your Name]
+Date: [YYYY-MM-DD]
 
 ---
-# ============================================================
-#  FX Exposure Executive Memo – Spec-Driven Template
-#  Version 2.0 (Codex/LLM Ready)
-#  Author: [Your Name]
-#  Date: [YYYY-MM-DD]
-# ============================================================
 
 spec_name: FX Exposure Executive Memo
 course: FIN321 – International Finance
 version: 2.0
 author: [Your Name]
+
 inputs:
   exposure_currency: "EUR"
   exposure_amount: 1_000_000
@@ -20,6 +18,7 @@ inputs:
   volatility_estimate: "High"
   firm_name: "Example Corp"
   analyst_name: "[Your Name]"
+  
 tasks:
   - summarize_exposure
   - explain_fx_risk
