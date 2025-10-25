@@ -1,11 +1,11 @@
 # FX Exposure Executive Memo – Scenario 3
 
-Prepared by: Christian Erice
-Reviewed by: Adam Stauffer
-Date Created: [10/24/2025]
-Last Updated: [10/24/2025]
-Version: [1.0]
-LLM Support (if used): GPT-5 Codex
+**Prepared by: Christian Erice
+**Reviewed by: Adam Stauffer
+**Date Created: [10/24/2025]
+**Last Updated: [10/24/2025]
+**Version: [1.0]
+**LLM Support (if used): GPT-5 Codex
 **Exposure:** €11,494,253 (≈$12,500,000 at EUR/USD 1.0875) receivable in 1 year  
 **Valuation Date:** 25 October 2025  
 **Settlement Date:** 25 October 2026  
