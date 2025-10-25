@@ -1,44 +1,59 @@
-# Executive Memo – EUR Receivable Hedge Strategy
-
-**Company:** U.S. Tech Services Firm  
-**Analyst:** AI Assistant  
-**Date:** 25 October 2025  
-**Exposure:** €11.49 million receivable (≈$12.5 million) due 25 October 2026  
-**Market Snapshot:** Spot 1.0875 | 1-year forward 1.0910 | USD 12M OIS 4.85% | EUR 12M EURIBOR 3.15%  
-**Option Quotes:** EUR put @1.0900 premium $0.017 | EUR call @1.1300 premium $0.022
-
----
-
-## 1. Executive Overview
-The firm is scheduled to receive €11.49 million from a European enterprise client in twelve months. Translating at today’s EUR/USD 1.0875 yields $12.5 million, aligned with FY26 guidance. Given elevated dollar volatility, an unhedged position risks unfavorable translation if the euro weakens. Hedging now secures cash conversion and protects EBITDA targets tied to this flagship managed-services engagement.
-
-## 2. Risk Assessment
-- **Directional exposure:** A stronger USD lowers USD receipts; each 0.01 decline in EUR/USD reduces cash by roughly $114,900.
-- **Market backdrop:** Divergence between Federal Reserve and ECB policy has widened rate differentials, favoring USD strength and increasing downside risk.
-- **Sensitivity:** At EUR/USD 1.03, receipts fall to about $11.84 million (−5.3% vs. plan); at 1.12, receipts rise to $12.87 million (+3.0%).
-
-## 3. Hedge Alternatives
-| Strategy | Execution Detail | USD Outcome (Indicative) | Key Considerations |
-|----------|------------------|--------------------------|--------------------|
-| **Forward Contract** | Sell €11.49M forward at 1.0910 | Locks ≈$12.53M | Eliminates risk but forgoes upside; requires credit line. |
-| **Option Collar** | Buy EUR put @1.0900 (pay $0.017); sell EUR call @1.1300 (receive ≈$0.012) | Net floor ≈$12.52M; upside capped above 1.1300 | Lower net premium; retains partial upside; option documentation needed. |
-| **Money-Market Hedge** | Borrow present value of USD at 4.85%, convert to EUR, invest at 3.15% | Synthetic forward ≈$12.52M | Uses balance sheet capacity; unwind costly if contract changes. |
-
-## 4. Recommendation
-Adopt a 12-month EUR/USD forward at 1.0910 for 100% of exposure to protect FY26 guidance. Layer a contingent collar on incremental euro inflows if commercial negotiations expand scope. Forward pricing offers certainty without cash premium and aligns with the firm’s risk appetite. Confirm counterparty limits and hedge accounting designation before trade execution.
-
-## 5. Implementation Plan
-1. Obtain treasury approval and confirm ISDA/CSA documentation with relationship bank.
-2. Execute €11.49M forward sale for settlement 25 Oct 2026; ensure trade booking in TMS.
-3. Monitor option markets weekly; if EUR rallies above 1.11, evaluate cost-effective collars for incremental receipts.
-4. Update forecasting model and communicate hedged rate to FP&A and Investor Relations.
-
-## 6. Assumptions & Next Actions
-- Rates, forward points, and option premiums are indicative as of 25 Oct 2025; refresh prior to execution.
-- No transaction costs, taxes, or credit valuation adjustments included.
-- Legal review of hedge documentation remains outstanding.
-
-**Next Actions:**
-- Build scenario workbook quantifying USD receipts across ±10% FX moves and hedge payoffs.
-- Finalize treasury policy addendum covering option usage thresholds.
-- Schedule follow-up with CFO to confirm hedge scope and accounting treatment.
+diff --git a/FIN321Project/ExecutiveMemo.md b/FIN321Project/ExecutiveMemo.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..6f1496dc5c9e766093a6ec7778c19bf4c90fbef3
+--- /dev/null
++++ b/FIN321Project/ExecutiveMemo.md
+@@ -0,0 +1,53 @@
++# FX Exposure Executive Memo – Scenario 3
++
++**Firm:** U.S. Tech Services Firm  
++**Analyst:** AI Assistant  
++**Exposure:** €11,494,253 (≈$12,500,000 at EUR/USD 1.0875) receivable in 1 year  
++**Valuation Date:** 25 October 2025  
++**Settlement Date:** 25 October 2026  
++**Market Data:** Spot 1.0875 | 1-year forward 1.0910 | USD 12M OIS 4.85% | EUR 12M EURIBOR 3.15%  
++**Option Quotes:** EUR put @1.0900 premium $0.017 | EUR call @1.1300 premium $0.022
++
++---
++
++## Executive Summary
++A U.S. Tech Services Firm expects to collect €11.49 million in twelve months from a European enterprise client. At today’s spot of 1.0875, the receivable supports a $12.5 million cash-flow target. Because a stronger U.S. dollar would erode the converted value, management should secure budget certainty. Entering a 12-month forward at 1.0910 or pairing a protective put with a covered call both establish a floor near plan while preserving selective upside. The objective is to safeguard EBITDA guidance, anchor investor messaging, and maintain optionality for upside if the euro rallies.
++
++---
++
++## Background & Objectives
++The receivable is denominated in euros, leaving the firm exposed to EUR/USD depreciation before conversion next October. Translating the €11.49 million exposure at the current 1.0875 spot rate yields the planned $12.5 million inflow. Dollar strength driven by divergent Federal Reserve and ECB policy could lower realized proceeds, unsettling guidance for the managed-services contract. 
++
++If EUR/USD were to fall to 1.03 by settlement, dollar receipts would decline to about $11.84 million—roughly $0.66 million under plan. A disciplined hedge program using either the posted 1-year forward rate of 1.0910 or a money-market hedge based on 4.85% USD borrowing and 3.15% EUR reinvestment protects cash flow visibility while balancing liquidity and premium considerations.
++
++---
++
++## Methods
++| Strategy | Mechanism | Pros | Cons |
++|----------|-----------|------|------|
++| Forward Contract | Sell €11.49M forward at 1.0910 for settlement on 25 Oct 2026. | Zero cash premium; locks ≈$12.53M; straightforward documentation. | No participation if EUR rallies above forward rate; consumes credit line. |
++| Option Collar | Buy EUR put @1.0900 (pay $0.017); sell EUR call @1.1300 (receive ≈$0.012). | Establishes floor near $12.5M; offsets put cost; retains upside until 1.1300. | Requires option approvals; potential margin for short call; residual premium outlay. |
++| Money-Market Hedge | Borrow USD today at 4.85%, convert to EUR spot, invest proceeds at 3.15% until maturity. | Replicates forward economics without derivatives; mitigates counterparty concerns. | Ties up balance-sheet capacity; sensitive to funding spreads; unwind can be costly. |
++
++**Quantitative Extension:** Build `fx_model.xlsx` to compare cash outcomes under spot ±5% scenarios and option intrinsic values at maturity.
++
++---
++
++## Limitations & Next Steps
++**Known Limitations:**
++- Assumes static spot, forward, and interest rates; ignores transaction costs and bid/ask spreads.
++- Option premiums are indicative quotes without volatility skew or credit valuation adjustments.
++- Accounting, tax, and counterparty credit assessments are pending and may influence final structure.
++
++**Next Steps:**
++1. Draft technical requirements for `fx_model.xlsx` covering forward, collar, and money-market cash-flow projections.
++2. Refresh market data and calibrate pricing inputs immediately before executing the selected hedge.
++3. Review hedge documentation (ISDA/CSA) and confirm hedge-accounting treatment with controllership.
++4. Present recommendation and sensitivity analysis to CFO, highlighting trigger levels for layering optional collars.
++
++---
++
++## References
++- European Central Bank (ECB) – FX Data API.
++- Hull, J. C. *Options, Futures, and Other Derivatives* (11th ed.).
++- Corporate Finance Institute (CFI) – *FX Hedging Strategies*.
