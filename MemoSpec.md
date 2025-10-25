@@ -1,14 +1,14 @@
 FX Exposure Executive Memo – Spec-Driven Template
-Version 2.0 (Codex/LLM Ready)
-Author: [Your Name]
-Date: [YYYY-MM-DD]
+  Version 2.0 (Codex/LLM Ready)
+  Author: [Your Name]
+  Date: [YYYY-MM-DD]
 
 ---
 
-spec_name: FX Exposure Executive Memo
-course: FIN321 – International Finance
-version: 2.0
-author: [Your Name]
+  spec_name: FX Exposure Executive Memo
+  course: FIN321 – International Finance
+  version: 2.0
+  author: [Your Name]
 
 inputs:
   exposure_currency: "EUR"
